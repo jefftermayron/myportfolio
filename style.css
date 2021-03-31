@@ -13,6 +13,10 @@
     --fontaction: "Mulish", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hamburguer {
     /*background-color: red;*/
     width: 2rem;
@@ -26,6 +30,7 @@
     justify-content: space-evenly;
     cursor: pointer;
     transition: all 1s;
+    z-index: 200;
 }
 
 .show-menu .hamburguer {
@@ -183,6 +188,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -294,10 +300,6 @@ header {
     margin-bottom: 1.3rem;
 }
 
-.sessao-header :hover {
-    color: #2C5364;
-}
-
 .conhecimento-header {
     display: flex;
     align-items: center;
@@ -342,8 +344,11 @@ header {
 }
 
 .projetos {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 
 .card {
@@ -426,4 +431,182 @@ header {
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(imagens/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Baloo Da 2", serif;
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+
+/*.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus~label {
+    top: 0;
+    font-size: 0.7rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn-submit {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 80%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.preenchido {
+    pointer-events: none;
+} video 12:30 minuto continuar na atualização*/
+
+.sessao-contato h4 {
+    font-family: "Mulish", serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sessao-contato h5 {
+    font-family: "Mulish", serif;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contato-right i {
+    color: #0F2027;
+    height: 2.5rem;
+    width: 25rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    transition: color 1s;
+}
+
+.icone-whats:hover i {
+    color: #2C5364;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #203A43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: "Mulish", serif;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    color: #eee;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .6rem #0000000;
 }
