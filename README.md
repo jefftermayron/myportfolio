@@ -17,4 +17,4 @@ O controle de tarefas desse projeto será realizado no Github
 
 The [MIT License]() (MIT)
 
-Copyright :copyright: Ano - Titulo do Projeto
+Copyright :copyright: 2021 - My Portfolio
